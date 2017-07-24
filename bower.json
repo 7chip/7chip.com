@@ -16,5 +16,8 @@
   ],
   "dependencies": {
     "foundation-sites": "^6.4.1"
+  },
+  "devDependencies": {
+    "motion-ui": "^1.2.3"
   }
 }

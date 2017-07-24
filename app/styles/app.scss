@@ -1,5 +1,11 @@
 @import "../../bower_components/foundation-sites/scss/foundation";
+
 @include foundation-everything;
+
+@import '../../bower_components/motion-ui/src/motion-ui';
+@include motion-ui-transitions;
+@include motion-ui-animations;
+
 
 @import url('https://fonts.googleapis.com/css?family=Nunito:300,400,600,700');
 
@@ -25,4 +31,9 @@ a{
         visibility: visible;
         opacity: 1;
     }
+}
+
+
+.home-slider{
+    background: #f3f3f3;
 }

@@ -5,29 +5,22 @@
   </div>
 
   <div class="top-bar-wrapper" id="responsive-menu">
-  <div class="top-bar" >
-
-    <div class="top-bar-left">
-      <ul class="dropdown menu">
-        <li class="menu-text">Site Title</li>
-      </ul>
-    </div>
-    <div class="top-bar-right">
-      <ul class="dropdown menu" data-dropdown-menu>
-        <li class="has-submenu">
-          <a href="#0">One</a>
-          <ul class="submenu menu vertical" data-submenu>
-            <li><a href="#0">One</a></li>
-            <li><a href="#0">Two</a></li>
-            <li><a href="#0">Three</a></li>
-          </ul>
-        </li>
-        <li><a href="#0">Two</a></li>
-        <li><a href="#0">Three</a></li>
-      </ul>
+    <div class="top-bar">
+      <div class="top-bar-left">
+        <ul class="menu site-name">
+          <li class="">
+            <h3>7Chip</h3>
+          </li>
+        </ul>
+      </div>
+      <div class="top-bar-right">
+        <ul class="dropdown menu" data-dropdown-menu>
+          <li>{{#link-to 'home'}} Home {{/link-to}}</li>
+          <li>{{#link-to 'portfolio'}} Portfolio {{/link-to}}</li>
+          <li>{{#link-to 'team'}}Team{{/link-to}}</li>
+          <li>{{#link-to 'contact'}}Contact{{/link-to}}</li>
+        </ul>
+      </div>
     </div>
   </div>
-  </div>
-
-
 </div>
