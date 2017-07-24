@@ -1,0 +1,20 @@
+{
+  "name": "seven-chip",
+  "description": "Small description for seven-chip goes here",
+  "main": "",
+  "authors": [
+    "Sibin Xavier <sibinx7@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/7chip/7chip.com",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "foundation-sites": "^6.4.1"
+  }
+}
