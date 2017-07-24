@@ -1,0 +1,37 @@
+.nav-section{
+    .top-bar-wrapper{
+        background: #fff;
+        border-bottom: 1px solid #eee;
+        .top-bar{
+            max-width: 75rem;
+            background: transparent;
+            margin-left: auto;
+            margin-right: auto;
+            ul{
+                background: transparent;
+            }
+        }
+    }
+    ul{
+        li{
+            a{
+                color: #333;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
+
+footer{
+    padding: 60px 0 40px;
+    background: #384254;
+    color: #fff;
+}
+
+.working-box{
+    padding: 25px;
+    display: block;
+    margin-top: -140px;
+    margin-bottom: 60px;
+    background: #cb2940;
+}
