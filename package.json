@@ -13,7 +13,7 @@
     "build": "ember build",
     "start": "ember server",
     "test": "ember test",
-    "postinstall": "./node_modules/bin/bower install"
+    "postinstall": "./node_modules/.bin/bower install"
   },
   "devDependencies": {
     "bower": "^1.8.0",
