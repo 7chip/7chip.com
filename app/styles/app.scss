@@ -1,0 +1,26 @@
+@import "../../bower_components/foundation-sites/scss/foundation";
+@include foundation-everything;
+
+@import url('https://fonts.googleapis.com/css?family=Nunito:300,400,600,700');
+
+.font-nunito{
+    font-family: 'Nunito', sans-serif;
+}
+body{
+    display: block;
+    height: auto;
+    font-size: 16px;
+    @extend .font-nunito;
+}
+a{
+    text-decoration: none;
+}
+
+.ember-body{
+    visibility: hidden;
+    opacity: 0;
+    &.loaded{
+        visibility: visible;
+        opacity: 1;
+    }
+}
