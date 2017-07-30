@@ -1,4 +1,9 @@
-{{partial 'common/header'}}
+{{#if homeHeader }}
+  {{ partial 'common/home-header' }}
+{{else }}
+  {{partial 'common/header'}}
+{{/if}}
+
 
 {{outlet}}
 

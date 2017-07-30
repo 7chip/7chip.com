@@ -1,0 +1,11 @@
+version: '2'
+services:
+  seven-chip:
+    build:
+      context: .
+    command: "ember serve -- --host=0.0.0.0"
+    ports:
+      - "9000:4200"
+    volumes:
+      - .:/docker
+      - /docker/node_modules

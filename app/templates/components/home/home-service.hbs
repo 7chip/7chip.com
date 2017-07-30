@@ -1,0 +1,47 @@
+<div class="home-services section-padding">
+  <div class="grid-container">
+    <div class="grid-x">
+      <div class="small-12 medium-4 columns">
+        <h4>
+          <span class="fa fa-cubes"></span>
+          We Offer
+        </h4>
+        <h2 class="text-uppercase separator-left margin-bottom-3">
+          Our Services
+        </h2>
+        <p class="text-justify">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aspernatur esse est et minus nisi praesentium quibusdam reprehenderit ullam veritatis. Autem, ducimus eligendi iure nisi nostrum officiis quae quod repellat!
+        </p>
+      </div>
+      <div class="small-12 medium-8 columns">
+        <ul class="service-lists clearfix">
+          {{#each serviceItems as |item| }}
+          <li>
+            <div class="v-rod"></div>
+            <div class="inner-service">
+              <div class="icon-area clearfix">
+                <span class="icon-text {{item.icon}}"></span>
+                <h6 class="title">{{item.title}}</h6>
+              </div>
+              <div class="content-area clearfix">
+                <div class="desc">{{item.content}}</div>
+                {{#if item.lists }}
+                <div class="sub-list">
+                  <ul>
+                    {{#each item.lists as |list| }}
+                      <li>
+                        <a href="{{list.url}}" target="_blank">{{list.name}}</a>
+                      </li>
+                    {{/each}}
+                  </ul>
+                </div>
+                {{/if}}
+              </div>
+            </div>
+          </li>
+          {{/each}}
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
