@@ -1,0 +1,13 @@
+{
+  "name": "seven-chip",
+  "description": "",
+  "repository": "https://github.com/7chip/7chip.com",
+  "buildpacks":[
+      {
+         "url":"https://codon-buildpacks.s3.amazonaws.com/buildpacks/heroku/emberjs.tgz"
+      }
+  ],
+  "environments":{
+      "NPM_CONFIG_PRODUCTION": false 
+  }
+}

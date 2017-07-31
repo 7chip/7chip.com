@@ -1,0 +1,28 @@
+<div class="home-technology section-padding">
+  <div class="grid-container">
+    <div class="grid-x ">
+      <div class="small-12 cell">
+        <h5 class="clearfix">
+          <span class="fa fa-space-shuttle"></span>
+          We use
+        </h5>
+        <h2 class="clearfix text-center separator-left margin-bottom-3">Our Technologies</h2>
+        <p class="text-justify">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, assumenda beatae et impedit ipsum magnam odit praesentium veniam voluptatem voluptatum! Eius, ex nemo nobis placeat quis recusandae rerum vero voluptatibus.
+        </p>
+        <ul class="technology-list">
+          {{#each technologies as |technology| }}
+            <li>
+              <div class="each-list has-tip" data-tooltip="" title="{{technology.name}} under {{technology.category}}">
+                <a href="{{technology.url}}" target="_blank">
+                  <span class="{{technology.icon}}"></span>
+                  {{technology.name}}
+                </a>
+              </div>
+            </li>
+          {{/each}}
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

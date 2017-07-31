@@ -1,28 +1,252 @@
 @import "../../bower_components/foundation-sites/scss/foundation";
+
 @include foundation-everything;
+@include foundation-prototype-separator;
+
+@import '../../bower_components/motion-ui/src/motion-ui';
+@include motion-ui-transitions;
+@include motion-ui-animations;
+
+@import "../../bower_components/font-awesome/scss/font-awesome";
+@import "./fonts/pictonic";
 
 @import url('https://fonts.googleapis.com/css?family=Nunito:300,400,600,700');
 
-.font-nunito{
-    font-family: 'Nunito', sans-serif;
+.font-nunito {
+  font-family: 'Nunito', sans-serif;
 }
 
 @import 'common/common';
-body{
-    display: block;
-    height: auto;
-    font-size: 16px;
-    @extend .font-nunito;
-}
-a{
-    text-decoration: none;
+body {
+  display: block;
+  height: auto;
+  font-size: 16px;
+  @extend .font-nunito;
 }
 
-.ember-body{
-    visibility: hidden;
-    opacity: 0;
-    &.loaded{
-        visibility: visible;
-        opacity: 1;
+a {
+  text-decoration: none;
+}
+
+.ember-body {
+  visibility: hidden;
+  opacity: 0;
+  &.loaded {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+.home-slider {
+  background: #f3f3f3;
+  .home-slider-inner {
+    .slider-background {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      &:after{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.5);
+      }
     }
+    .content-section {
+      top: 30%;
+      background: transparent;
+      .inner-content{
+        max-width: 75rem;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: right;
+        *{
+          text-align: right;
+        }
+      }
+    }
+  }
+}
+
+/** HOME SERVICE **/
+$h_service_width: 100%;
+.service-lists{
+  display: block;
+  margin-left: 10px;
+  padding: 0;
+  > li{
+    display: block;
+    float: left;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 30px;
+    width: $h_service_width/3;
+    position: relative;
+    .v-rod{
+      position: absolute;
+      top: 0;
+      left: 9px;
+      width: 15px;
+      height: calc(100% - 10px);
+      background: rgba(66,58,52,0.5);
+      content: '';
+      z-index: -1;
+    }
+  }
+  .inner-service{
+    border: 1px solid #eee;
+    width: 100%;
+    height: 300px;
+    background: #fb4798;
+    position: relative;
+    transform: skew(3deg);
+    padding: 30px 15px 15px;
+    z-index: 2;
+    &:before,
+    &:after{
+      content: '';
+      position: absolute;
+      top: 10px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #333;
+    }
+    &:before{
+      left: 30px;
+    }
+    &:after{
+      right: 30px;
+    }
+    .content-area{
+      position: relative;
+      display: block;
+      .desc{
+        display: block;
+        font-weight: lighter;
+        font-size: 13px;
+        margin-bottom: 10px;
+      }
+    }
+    .icon-area{
+      padding-left: 32px;
+      .icon-text{
+        float: left;
+        width: 32px;
+        height: 32px;
+        display: block;
+        margin-left: -32px;
+        background: #333;
+        border-radius: 4px;
+        color: #fff;
+        text-align: center;
+        line-height: 32px;
+        font-size: 18px;
+      }
+      .title{
+        padding-left: 5px;
+        vertical-align: middle;
+        font-weight: bold;
+        margin-top: -4px;
+      }
+    }
+    ul{
+      padding: 0;
+      margin: 0;
+      li{
+        list-style: none;
+        position: relative;
+        &:before{
+          content: '\f046';
+          display: inline-block;
+          font: normal normal normal 14px/1 FontAwesome;
+          font-size: inherit;
+          text-rendering: auto;
+          -webkit-font-smoothing: antialiased;
+          left: 0;
+        }
+        a{
+          font-size: 14px;
+          color: #333;
+        }
+      }
+    }
+  }
+}
+
+/** END HOME SERVICE **/
+
+$achievement_width: 100%;
+.achievements{
+  display: block;
+  margin: 0 -15px 0;
+  li{
+    list-style: none;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: $achievement_width/3;
+    float: left;
+    .each-achievement{
+      padding: 10px;
+      border: 1px solid #fff;
+    }
+  }
+  .each-achievement{
+    .icon,.number{
+      width: 64px;
+      float: left;
+      font-size: 32px;
+      display: block;
+      text-align: center;
+      sup{
+        font-size: 15px;
+        vertical-align: super;
+      }
+    }
+    .content{
+      width: calc(100% - 128px);
+      float: left;
+      h5{
+        margin: 0;
+        line-height: 1.2;
+      }
+    }
+  }
+}
+
+.home-technology{
+  background: #f3f3f3;
+}
+
+$technology_width: 100%;
+.technology-list{
+  display: block;
+  margin: 0 -15px;
+  padding: 0;
+
+  li:not(.slick-slide){
+    display: block;
+    width: $technology_width/5;
+    padding-left: 15px;
+    padding-right: 15px;
+    float: left;
+    margin-bottom: 30px;
+    .each-list{
+      display: block;
+      background: #eee;
+      border-radius: 2px;
+      padding: 10px;
+      a{
+        display: block;
+        width: 100%;
+        color: #777;
+        font-size: 18px;
+      }
+    }
+  }
 }

@@ -1,37 +1,109 @@
-.nav-section{
+.nav-section {
+  .top-bar-wrapper {
+    background: #fff;
+    border-bottom: 1px solid #eee;
+    .top-bar {
+      max-width: 75rem;
+      background: transparent;
+      margin-left: auto;
+      margin-right: auto;
+      ul {
+        background: transparent;
+      }
+    }
+  }
+  ul {
+    li {
+      a {
+        color: #333;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+.site-name {
+  li {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+footer {
+  padding: 60px 0 40px;
+  background: #384254;
+  color: #fff;
+}
+
+.working-box {
+  padding: 25px;
+  display: block;
+  margin-top: -140px;
+  margin-bottom: 60px;
+  background: #cb2940;
+  position: relative;
+  z-index: 4;
+}
+
+.home-header{
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  .top-navbar{
+    background: transparent;
+  }
+  .nav-section{
     .top-bar-wrapper{
-        background: #fff;
-        border-bottom: 1px solid #eee;
-        .top-bar{
-            max-width: 75rem;
-            background: transparent;
-            margin-left: auto;
-            margin-right: auto;
-            ul{
-                background: transparent;
-            }
-        }
+      background: transparent;
+      border: none;
     }
-    ul{
-        li{
-            a{
-                color: #333;
-                text-transform: uppercase;
-            }
-        }
-    }
+  }
 }
 
-footer{
-    padding: 60px 0 40px;
-    background: #384254;
-    color: #fff;
+.social-list-top,
+.contact-work-list{
+  display: inline-block;
+  list-style: none;
+  margin: 10px 0;
+  li{
+    list-style: none;
+    display: inline-block;
+    a{
+      color: #fff;
+    }
+    a+a{
+      margin-left: 5px;
+    }
+  }
+}
+.contact-work-list{
+  li{
+    a{
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: -.5px;
+      word-spacing: 2px;
+    }
+  }
 }
 
-.working-box{
-    padding: 25px;
-    display: block;
-    margin-top: -140px;
-    margin-bottom: 60px;
-    background: #cb2940;
+.section-padding{
+  padding: 100px 0;
+  display: block;
+}
+
+.home-services{
+  padding-bottom: 300px;
+  background-image: url('../images/section/web-development.png');
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+
+.home-achievement{
+  background: #fb4798
+}
+.text-uppercase{
+  text-transform: uppercase;
 }
