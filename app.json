@@ -7,7 +7,23 @@
          "url":"https://codon-buildpacks.s3.amazonaws.com/buildpacks/heroku/emberjs.tgz"
       }
   ],
+  "env":{
+    "NPM_CONFIG_PRODUCTION": {
+      "value": "false"
+    }
+  },
   "environments":{
-      "NPM_CONFIG_PRODUCTION": false 
+      "production":{
+        "NPM_CONFIG_PRODUCTION": "false",
+        "env":{
+          "NPM_CONFIG_PRODUCTION": "false"
+        }
+      },
+    "review_apps":{
+      "NPM_CONFIG_PRODUCTION": "false",
+      "env":{
+        "NPM_CONFIG_PRODUCTION": "false"
+      }
+    }
   }
 }
