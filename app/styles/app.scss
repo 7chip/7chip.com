@@ -218,3 +218,35 @@ $achievement_width: 100%;
     }
   }
 }
+
+.home-technology{
+  background: #f3f3f3;
+}
+
+$technology_width: 100%;
+.technology-list{
+  display: block;
+  margin: 0 -15px;
+  padding: 0;
+
+  li:not(.slick-slide){
+    display: block;
+    width: $technology_width/5;
+    padding-left: 15px;
+    padding-right: 15px;
+    float: left;
+    margin-bottom: 30px;
+    .each-list{
+      display: block;
+      background: #eee;
+      border-radius: 2px;
+      padding: 10px;
+      a{
+        display: block;
+        width: 100%;
+        color: #777;
+        font-size: 18px;
+      }
+    }
+  }
+}
