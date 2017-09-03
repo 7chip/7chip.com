@@ -47,6 +47,9 @@ Specify what it takes to deploy your app.
 ### Jenkin Support 
 
 Jenkin added as continues integration 
+- Gitlab integration plugin 
+- ngrock 
+- Github webhook
 
 ## Further Reading / Useful Links
 
