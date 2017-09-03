@@ -56,4 +56,30 @@ const ServiceItems = [
   }
 ];
 
+const ServiceItemList = [
+	{
+		title: 'Web Development', 
+		content: 'Lorem lipsum',
+	},
+	{
+		title: 'Web Design',
+		content: 'Lorem lipsum',
+	},
+	{
+		title: 'Frontend Development',
+		content: 'Lorem lipsum'
+	},
+	{
+		title: 'SEO and Articles',
+		content: 'Lorem lipsum'
+	},
+	{
+		title: 'Tutorials',
+		content: 'Lorem lipsum'
+	}
+];
+
 export default  ServiceItems;
+export {ServiceItemList}
+
+

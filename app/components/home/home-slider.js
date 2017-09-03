@@ -5,7 +5,7 @@ export default Ember.Component.extend({
     this._super(...arguments)
     if(typeof particlesJS !="undefined"){
       particlesJS.load('particles-js', 'other/particles.json', function() {
-        console.log('callback - particles.js config loaded');
+        
       });
     }
   }
