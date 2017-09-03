@@ -48,8 +48,9 @@ Specify what it takes to deploy your app.
 
 Jenkin added as continues integration
 - Gitlab integration plugin
-- ngrock 
+- ngrock
 - Github webhook
+
 
 
 ## Further Reading / Useful Links
