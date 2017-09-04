@@ -17,6 +17,7 @@
 }
 
 @import 'common/common';
+
 body {
   display: block;
   height: auto;
@@ -250,3 +251,57 @@ $technology_width: 100%;
     }
   }
 }
+
+.home-slider{
+  position: relative;
+  height: 100vh;
+  #particles-js{
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+  }
+  .home-slider-inner{
+    height: 100vh;
+    position: relative;
+    .content-section{
+      .inner-content{
+        z-index: 7;
+        position: relative;
+      }
+    }
+  }
+}
+
+/** SERVICE PAGE **/
+.service-page{
+	.banner-section{
+		display: block;
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-image: url('../images/background/service.jpg');
+		height: 0;
+		padding-bottom: 25%;
+		width: 100%;
+	}
+}
+
+$service_width: 100%;
+.service-page-list{
+	padding: 0;
+	margin: 0 -10px 15px;
+	li{
+		width: $service_width/3;
+		display: block;
+		padding-left: 10px;
+		padding-right: 10px;
+		margin-bottom: 20px;
+		float: left;
+		.set{
+			padding: 10px;
+			background: #eee;
+		}	
+	}
+}
+/** END SERVICE PAGE **/

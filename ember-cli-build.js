@@ -14,7 +14,7 @@ module.exports = function(defaults) {
   app.import('bower_components/jquery/dist/jquery.min.js');
   app.import('bower_components/foundation-sites/dist/js/foundation.min.js');
   app.import('bower_components/motion-ui/dist/motion-ui.min.js');
-
+  app.import('bower_components/particles.js/particles.min.js');
 
   // Use `app.import` to add additional libraries to the generated
   // output files.

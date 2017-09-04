@@ -1,0 +1,36 @@
+<div class="service-page padding-bottom-120">
+	<div class="banner-section">
+
+	</div>
+	<div class="grid-container">
+		<div class="grid-x grix-margin-x">
+			<div class="small-12 medium-4 large-3 cell">
+				SERVICE _IMAGE 
+			</div>
+			<div class="small-12 medium-8 large-9 cell">
+				<div class="service-list padding-tb-60">
+					<pre>
+						{{model.title}}
+					
+					</pre>
+					<ul class="service-page-list clearfix">
+						{{#each  model.serviceList as |service| }}
+						<li>
+							<div class="set">
+								<div class="icon-set"></div>
+								<div class="content">
+									<h4>{{service.title}}</h4>
+									<article>
+										{{service.content}}
+									</article>
+								</div>
+							</div>
+						</li>
+						{{/each}}
+					</ul>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+</div>

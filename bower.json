@@ -16,7 +16,8 @@
   ],
   "dependencies": {
     "foundation-sites": "^6.4.1",
-    "font-awesome": "^4.7.0"
+    "font-awesome": "^4.7.0",
+    "particles.js": "^2.0.0"
   },
   "devDependencies": {
     "motion-ui": "^1.2.3"
