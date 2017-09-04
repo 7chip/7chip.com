@@ -44,13 +44,15 @@ Make use of the many generators for code, try `ember help generate` for more det
 Specify what it takes to deploy your app.
 
 
-### Jenkin Support 
+### Jenkin Support
 
-Jenkin added as continues integration 
-- Gitlab integration plugin 
-- ngrock 
+Jenkin added as continues integration
+- Gitlab integration plugin
+- ngrock
 - Github webhook
 - He
+
+
 
 ## Further Reading / Useful Links
 
